@@ -1,0 +1,6 @@
+# Config File for Hy-RQSE
+n = 512
+mode = "Lite"
+telemetryEnabled = true
+kex = "X25519"
+aeadBlockSize = 4096

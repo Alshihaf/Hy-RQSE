@@ -1,0 +1,18 @@
+[package]
+name = "hy-rqse-os"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# Untuk implementasi no_std
+cfg-if = "1.0"
+zeroize = { version = "1.8", default-features = false, features = ["derive"] }
+
+[lib]
+name = "hy_rqse_os"
+path = "src/lib.rs"
+
+[features]
+default = ["std"]
+std = []
+no_std = []
